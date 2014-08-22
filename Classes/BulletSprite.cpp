@@ -5,9 +5,9 @@ BulletSprite::BulletSprite() {
 BulletSprite::~BulletSprite() {
 }
 bool BulletSprite::init() {
-	if (!Sprite::init()) {
-		return false;
-	}
+//	if (!Sprite::init()) {
+//		return false;
+//	}
 	this->schedule(schedule_selector(BulletSprite::ShootBullet));
 	return true;
 }
