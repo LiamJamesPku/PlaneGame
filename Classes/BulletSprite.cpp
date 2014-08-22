@@ -29,7 +29,8 @@ void BulletSprite::ShootBullet(float dt) {
 	spritebullet->setScale(0.4f);
 	vecBullet.pushBack(spritebullet);
 	float flyLen = winSize.height - PlanePos.y;
-	float flyVelocity = 320 / 1;
+//	float flyVelocity = 320 / 1;
+  float flyVelocity = 1000;
 	float realFlyDuration = flyLen / flyVelocity;
 
 	auto actionMove = MoveTo::create(realFlyDuration,
