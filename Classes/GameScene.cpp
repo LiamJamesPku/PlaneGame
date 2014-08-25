@@ -15,7 +15,7 @@ bool GameLayer::init() {
 	Size winSize = Director::getInstance()->getWinSize();
 	char buff[15];
 	int id = getRand(1, 5);
-	sprintf(buff, "img_bg_%d.jpg", id);
+	sprintf(buff, "img_bg_%d.jpg", id); //随即取一个背景图片
 	auto over = Sprite::create(buff);
 	over->setPosition(Point(winSize.width / 2, winSize.height / 2));
 	this->addChild(over);
